@@ -75,6 +75,37 @@
         // Il est possible de faire la concaténation avec le point ou avec la virgule
         // print n'accepte pas la concaténation avec la virgule !
 
+        echo '<h2>02 - Variables : déclaration / affectation / type</h2>';
+        // Une variable est un espace nommé permettant de conserver une valeur.
+        // Une variable se déclare avec le signe $
+        // Caractères autorisés :  a-z A-Z 0-9 _
+        // PHP est sensible à la casse (une minuscule n'est pas équivalent à une majuscule)
+        // Une variable ne peut pas commencer par un chiffre !
+
+        // gettype() est une fonction prédéfinie (déjà inscrite au langage) permettant de nous renvoyer une chaine de caractère représentant le type d'une variable.
+
+        $a = 123;   // Déclaration de la variable nommée 'a' et affection de la valeur numérique 123
+        echo $a;
+        echo gettype($a); // Integer = un entier
+        echo '<br>';
+
+        $a = 1.5; // On change la valeur contenue dans la variable $a
+        echo $a;
+        echo gettype($a); // double ou float = chiffre décimal
+        echo '<br>';
+
+        $a = 'Une chaine';
+        echo $a;
+        echo gettype($a); // string = une chaine de caractères
+        echo '<br>';
+
+        $b = true;
+        echo $b; // Nous renvoie 1  car true = 1 = existe  les booléens ne sont pas sensibles à la casse, true = TRUE, false = FALSE
+        echo gettype($b); // boolean // vrai ou faux // 1 ou 0
+        echo '<br>';
+
+        // Il reste deux autres types que l'on verra sur des chapitres suivants (array/object)
+
 ?>
 </body>
 </html>
