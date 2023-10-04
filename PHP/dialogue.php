@@ -140,7 +140,11 @@ $liste_commentaire = $pdo->query("SELECT pseudo, message, date_format(date_enreg
                                 </div>';
                         }
                     
+
+                    echo "Et finalement la solution de Léo";
+
                     echo "C'est le dev de Ikuko";
+
                     ?>
                     
                 </div>
