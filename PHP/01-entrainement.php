@@ -106,6 +106,41 @@
 
         // Il reste deux autres types que l'on verra sur des chapitres suivants (array/object)
 
+        echo '<h2>03 - Concaténation</h2>';
+        // la concaténation consiste à assembler des chaines de caractères (sous forme de texte ou comprisent dans des variables) les unes avec les autres.
+        // caractère de concaténation : le point . (il est possible d'utiliser la virgule aussi, mais seulement avec echo)
+        // le caractère de concaténation peut toujours se traduire par "suivi de"
+
+        $x = 'Bonjour';
+        $y = 'tout le monde';
+
+        // Sans concaténation :
+        echo $x;
+        echo ' ';
+        echo $y;
+        echo '<br>';
+
+        // Avec concaténation
+        echo $x . ' ' . $y . '<br>';
+
+        // Concaténation avec la virgule seulement avec echo
+        echo $x, ' ', $y, '<br>';
+
+        // Concaténation lors de l'affectation
+        $prenom = 'Pierre';
+        $prenom = 'Alexandre'; // cela écrase la valeur précédente 
+        echo $prenom . '<br>'; // affiche Alexandre
+
+        // Pour rajouter sans écraser :
+        $prenom2 = 'Pierre';
+        $prenom2 = $prenom2 . '-Alexandre';
+        echo $prenom2 . '<br>';
+        // Raccourci d'écriture
+        $prenom3 = 'Pierre';
+        $prenom3 .= '-Alexandre'; // avec le .= on rajoute sans écraser
+
+        echo $prenom3 . '<br>';
+
 ?>
 </body>
 </html>
